@@ -1,0 +1,121 @@
+@import "../../styles/base.scss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.background {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding-top: 5%;
+  box-sizing: border-box;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 5vh;
+  font-size: 48px;
+  @include apply-at-sm-size {
+    font-size: 24px;
+  }
+
+  @include apply-at-md-size {
+    font-size: 32px;
+  }
+}
+
+.countdownContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+
+  @include apply-at-sm-size {
+    gap: 5%;
+  }
+
+  @include apply-at-md-size {
+    gap: 5%;
+  }
+
+  @include apply-at-lg-size {
+    gap: 10%;
+  }
+
+  @include apply-at-xl-size {
+    gap: 20%;
+  }
+}
+
+.timeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+}
+
+.countdownBox {
+  width: fit-content;
+  height: fit-content;
+  background: linear-gradient(to top, $flipColour 50%, $flipColourDark 50%);
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.textTime {
+  color: white;
+  align-self: center;
+}
+
+.time {
+  font-size: 84px;
+  margin: 0;
+  background: linear-gradient(to top, $textColour 50%, $textColourDark 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  @include apply-at-sm-size {
+    font-size: 24px;
+  }
+
+  @include apply-at-lg-size {
+    font-size: 36px;
+  }
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  height: 10vh;
+}
+
+.footerBg {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  content: url("/pattern-hills.svg");
+  z-index: -1;
+}
+
+.socmedContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.timeOver {
+  color: $textColour;
+  font-size: 48px;
+}

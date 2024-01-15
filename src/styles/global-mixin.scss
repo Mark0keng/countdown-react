@@ -1,0 +1,17 @@
+// @import "./color.scss";
+@import url("https://fonts.google.com/specimen/Red+Hat+Text");
+
+:root {
+  font-family: Red Hat Text, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  background-color: $very-dark;
+  background-image: url("/bg-stars.svg");
+}
