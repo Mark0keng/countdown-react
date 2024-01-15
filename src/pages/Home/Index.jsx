@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import classes from "./style.module.scss";
 
-const Index = () => {
+const Home = () => {
   const searchParams = useLocation();
   const params = new URLSearchParams(searchParams.search);
 
@@ -126,4 +126,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;
