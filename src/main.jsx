@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 
 const router = createBrowserRouter([
   {
-    path: "/countdown",
+    path: "/",
     element: <Home />,
   },
 ]);
